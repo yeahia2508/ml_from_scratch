@@ -54,7 +54,7 @@ class ReadImageClass:
         
         imageHeight = image_shape[0]
         imageWidth = image_shape[1]
-        imageMatrix = np.zeros((imageHeight, imageWidth, 3, batch_size))
+        imageMatrix = np.zeros((imageHeight, imageWidth, 3, batch_size), dtype=np.uint8)
         
         for i in range(batch_size):
             I = Image.open(img_files[i])
@@ -62,35 +62,70 @@ class ReadImageClass:
             imageArray = np.array(Ire)
             
             if(len(imageArray.shape) != 3):
-                I3D = np.zeros(imageHeight, imageWidth, 3)
+                I3D = np.zeros((imageHeight, imageWidth, 3))
                 I3D[:,:,0] = imageArray
                 I3D[:,:,1] = imageArray
                 I3D[:,:,2] = imageArray
                 imageArray = I3D
             
             imageMatrix[:,:,:,i] = imageArray
+            
+        imageMatrix.astype(np.uint8)
         
         return (img_classes, imageMatrix)
-            
-            
+    
+    
+class ConvLayer:
+    def __init__(self, kShape, kNumber):
+        self.xKShape = kShape[0]
+        self.yKShape = kShape[1]
+        self.kNumber = kNumber
         
+        self.weights = np.random.rand(self.xKShape, self.yKShape, kNumber)
+        self.biases = np.random.rand(1, kNumber)
+    
+    def forward(self, imageMatrix, padding = 0, stride = 1):
+        self.padding = padding
+        self.stride = stride
+        [xImageShape, yImageShape, channelSize, batchSize] = imageMatrix.shape
+        
+        xOutput = int((xImageShape - self.xKShape + 2 * padding ) / stride + 1)
+        yOutput = int((yImageShape - self.yKShape + 2 * padding ) / stride + 1)
+        
+        output = np.zeros((xOutput, yOutput, channelSize, self.kNumber, batchSize))
+        
+        imagePadded = np.zeros((xImageShape + 2 * padding, yImageShape + 2*padding, channelSize, self.kNumber, batchSize))
+        
+        for k in range(self.kNumber):
+            imagePadded[int(padding): int(padding + xImageShape), int(padding): int(padding + yImageShape), :,k,:] = imageMatrix
+        
+        
+        
+        for i in range(batchSize):
+            for k in range(self.kNumber):
+                for c in range(channelSize):
+                    for x in range(xOutput):
+                        for y in range(yOutput):
+                            yStart = y * stride
+                            yEnd = yStart + self.yKShape
+                            xStart = x * stride
+                            xEnd = xStart + self.xKShape
+                            
+                            currentSlice = imagePadded[xStart:xEnd, yStart:yEnd, c, k, i]
+                            imgSlice_k_mul = np.multiply(currentSlice, self.weights[:, :, k])
+                            output[x, y, c, k, i] = np.sum(imgSlice_k_mul) + self.biases[0, k].astype(float)
+                            
+        self.output =  output.sum(2)
+        self.input = imageMatrix
+        self.paddedInput = imagePadded
+        
+        
+
         
 readImage = ReadImageClass()
-random_classes, random_image_matrix = readImage.get_batch_image_with_class('images', 2, [50,50])
-plt.imshow(random_image_matrix[:,:,2,1])
-plt.show()
+random_classes, random_image_matrix = readImage.get_batch_image_with_class('images', 2, [120,120])
+convLayer1 = ConvLayer([3,3], 5)
+convLayer2 = ConvLayer([5,5], 8)
 
-# image_extensions = ('*.jpg', '*.jpeg', '*.png')
-# path = 'images'
-
-# cats = []
-# dogs = []
-
-# for ext in image_extensions:
-#     cats.extend(gl.glob(os.path.join(path, 'cat', ext)))
-#     dogs.extend(gl.glob(os.path.join(path, 'dog', ext)))\
-
-# img = Image.open(cats[1])
-# img.resize([50,50])
-# plt.imshow(img)
-# plt.show()
+convLayer1.forward(random_image_matrix, padding = 1, stride = 1)
+convLayer2.forward(convLayer1.output, padding = 1, stride = 2)
