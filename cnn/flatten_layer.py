@@ -22,5 +22,15 @@ class FlattenLayer:
         self.output = flat_data
         self.input = imageMatrix
         
+    
+    def backward(self, dvalues):
+        [xImage, yImage, channelSize, batchSize] = self.input.shape
+        
+        dinputs = np.zeros(self.input.shape)
+        
+        for i in range(batchSize):
+            dinputs[:,:,:,i] = dvalues[i,:].reshape(xImage, yImage, channelSize)
+            
+        self.dinputs = dinputs
         
         
