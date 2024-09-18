@@ -25,17 +25,10 @@ maxpool1.forward(convLayer1.output, kernelShape= [3,3], stride = 1)
 flatten_layer.forward(maxpool1.output)
 flatten_layer.backward(flatten_layer.output)
 
-im1 = convLayer1.output[:, : , 0, 0]
-im2 = maxpool1.output[:, :, 0, 0]
-im3 = maxpool1.mask[:, :, 0, 0]
-im4 = flatten_layer.dinputs[:,:,0,0]
+im1 = maxpool1.output[:, :, 0, 0]
+im2 = flatten_layer.dinputs[:,:,0,0]
 
 plt.imshow(im1)
 plt.show()
 plt.imshow(im2)
 plt.show()
-plt.imshow(im3)
-plt.show()
-plt.imshow(im4)
-plt.show()
-
