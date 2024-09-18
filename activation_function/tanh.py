@@ -1,4 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Sep 18 22:57:17 2024
 
+@author: yeahia
+"""
 
 import numpy as np
 
