@@ -73,5 +73,15 @@ class ReadImageClass:
         
         return (img_classes, imageMatrix)
     
-# -*- coding: utf-8 -*-
+    def rgb_to_grayscale(self, rgbImage):
+        #gray_image = 0.299 * rgbImage[:, :, 0] + 0.587 * rgbImage[:, :, 1] + 0.114 * rgbImage[:, :, 2]
+        #gray_image = (gray_image * 255).astype(np.uint8)
+        #return gray_image
+        return np.dot(rgbImage[...,:3], [0.2989, 0.5870, 0.1140])
+    
+    def rgb_to_grayscale_batch(self, rgb_images):
+        transposed_images = np.transpose(rgb_images, (3, 0, 1, 2))
+        grayscale_images = np.dot(transposed_images[...,:3], [0.2989, 0.5870, 0.1140])
+        grayscale_images = np.transpose(grayscale_images, (1, 2, 0))
+        return grayscale_images
 
