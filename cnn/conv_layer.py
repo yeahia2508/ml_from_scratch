@@ -60,7 +60,7 @@ class ConvLayer:
         yk = self.yKShape
         nk = self.kNumber
         weights = self.weights
-        paddedImage = self.paddedImage
+        paddedImage = self.paddedInput
         
         paddedImageShape = paddedImage.shape
         dinputs = np.zeros((paddedImageShape[0], paddedImageShape[1], paddedImageShape[2], paddedImageShape[4]))
@@ -69,7 +69,7 @@ class ConvLayer:
         dweights = np.zeros(self.weights.shape)
         
         xd = dvalues.shape[0]
-        yd = dvalues.shpae[1]
+        yd = dvalues.shape[1]
         numChan = paddedImageShape[2]
         batchSize = paddedImageShape[4]
         
