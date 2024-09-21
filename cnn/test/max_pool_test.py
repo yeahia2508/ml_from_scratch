@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from cnn.utils import *
 from cnn.conv_layer import *
-from cnn.maxpool_layer import *
+from cnn.pooling_layer.maxpool_layer import *
 import matplotlib.pyplot as plt
 
 
