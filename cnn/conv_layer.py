@@ -18,8 +18,6 @@ class ConvLayer:
         self.biases = np.random.rand(1, kNumber)
     
     def forward(self, imageMatrix, padding = 0, stride = 1):
-        self.padding = padding
-        self.stride = stride
         [xImageShape, yImageShape, channelSize, batchSize] = imageMatrix.shape
         
         xOutput = int((xImageShape - self.xKShape + 2 * padding ) / stride + 1)
@@ -50,5 +48,55 @@ class ConvLayer:
                             
         self.output =  output.sum(2)
         self.input = imageMatrix
-        self.paddedInput = imagePadded# -*- coding: utf-8 -*-
+        self.paddedInput = imagePadded
+        self.padding = padding
+        self.stride = stride
+        
+    
+    def backward(self, dvalues):
+        stride = self.stride
+        padding = self.padding
+        xk = self.xKShape
+        yk = self.yKShape
+        nk = self.kNumber
+        weights = self.weights
+        paddedImage = self.paddedImage
+        
+        paddedImageShape = paddedImage.shape
+        dinputs = np.zeros((paddedImageShape[0], paddedImageShape[1], paddedImageShape[2], paddedImageShape[4]))
+        
+        dbiases = np.zeros(self.biases.shape)
+        dweights = np.zeros(self.weights.shape)
+        
+        xd = dvalues.shape[0]
+        yd = dvalues.shpae[1]
+        numChan = paddedImageShape[2]
+        batchSize = paddedImageShape[4]
+        
+        imagePadded = paddedImage[:,:,:,0,:]
+        
+        for i in range(batchSize):
+            for c in range(numChan):
+                for k in range(nk):
+                    for y in range(yd):
+                        for x in range(xd):
+                            yStart = y * stride
+                            yEnd = yStart + yk
+                            xStart = x * stride
+                            xEnd = xStart + xk
+                            
+                            sx = slice(xStart, xEnd)
+                            sy = slice(yStart, yEnd)
+                            
+                            currentSlice = imagePadded[sx, sy, c, i]
+                            dweights[:,:,k] += currentSlice * dvalues[x,y,k,i]
+                            dinputs[sx, sy, c, i] += dweights[:,:,k] * dvalues[x,y,k,i]
+                            
+                    dbiases[0,k] = np.sum(np.sum(weights[:,:,k], axis = 0), axis = 0)
+                    
+        dinputs = dinputs[padding: paddedImageShape[0]-padding, padding: paddedImageShape[1]-padding, :, :]
+        self.dinputs = dinputs
+        self.dweights = dweights
+        self.dbiases = dbiases
+        
 
