@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import numpy
+import numpy as np
 
 class Optimizer_SGD:
     #initializing with a default learning rate of 0.1
