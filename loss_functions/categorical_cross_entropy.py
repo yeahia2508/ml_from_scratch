@@ -1,7 +1,7 @@
 import numpy as np
 from loss import *
 
-class Loss_CategoricalCrossEntropy(Loss): 
+class CategoricalCrossEntropy(Loss): 
      def forward(self, y_pred, y_true):
          samples = len(y_pred)
          #removing vals close to zero and one bco log and accuracy
