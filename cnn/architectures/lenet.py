@@ -8,6 +8,7 @@ from ann.layer_dense import *
 from activation_function.softmax import *
 from loss_functions.categorical_cross_entropy import *
 from optimizers.sgd import *
+from loss_functions.softmax_loss import SoftmaxLossGrad
 import matplotlib.pyplot as plt
 import random
 import numpy as np
@@ -27,8 +28,7 @@ class LeNet:
         self.flat_layer = FlattenLayer()
         self.dense1 = Layer_Dense(self.n_input, self.n_neuron)
         self.dense_final = Layer_Dense(self.n_neuron, self.n_category)
-        self.activation_softmax = Activation_Softmax()
-        self.loss = CategoricalCrossEntropy()
+        self.loss_activation = SoftmaxLossGrad()
         self.optimizer = Optimizer_SGD()
         
         
@@ -57,8 +57,11 @@ class LeNet:
             idx = random.sample(n_total, minibatch_size)
             M = self.trainX[:,:,:, idx]
             C = self.trainY[idx]
+            ie      = iteration * epochs
+            Monitor = np.zeros((ie,3))
+            ct      = 0
             
-            for i in range(iteration):
+            for it in range(iteration):
                 self.conv1.forward(M,0,1)
                 self.activation_tanh[0].forward(self.conv1.output)
                 self.ap1.forward(self.activation_tanh[0].output, 2, 2)
@@ -75,17 +78,51 @@ class LeNet:
                 self.activation_tanh[3].forward(self.dense1.output)
                 self.dense_final.forward(self.activation_tanh[3].output)
                 
-                self.activation_softmax.forward(self.dense_final.output)
-                self.loss.forward(self.activation_softmax.output, C)
+                loss = self.loss_activation.forward(self.dense_final.output, C)
                 
-                self.predictions = np.argmax(self.activation_softmax.output, axis=1)
+                self.predictions = np.argmax(self.loss_activation.output, axis=1)
                 if len(C.shape) == 2:
                     C = np.argmax(C, axis=1)
                 self.accuracy = np.mean(self.predictions == C)
                 
                 
                 ##backward
-                self.loss.backward(self.activation_softmax.output, C)
+                self.loss_activation.backward(self.loss_activation.output, C)
+                self.dense_final.backward(self.loss_activation.dinputs)
+                self.activation_tanh[3].backward(self.dense_final.dinputs)
+                self.dense1.backward(self.activation_tanh[3].dinputs)
+                self.flat_layer.backward(self.dense1.dinputs)
+                self.activation_tanh[2].backward(self.flat_layer.dinputs)
+                self.conv3.backward(self.activation_tanh[2].dinputs)
+                self.ap2.backward(self.conv3.dinputs)
+                self.activation_tanh[1].backward(self.ap2.dinputs)
+                self.conv2.backward(self.activation_tanh[1].dinputs)
+                self.ap1.backward(self.conv2.dinputs)
+                self.activation_tanh[0].backward(self.ap1.dinputs)
+                self.conv1.backward(self.activation_tanh[0].dinputs)
+                
+                self.optimizer.pre_update_params()
+                    
+                self.optimizer.update_params(self.dense1)
+                self.optimizer.update_params(self.dense_final)
+                                    
+                self.optimizer.update_params(self.conv1)
+                self.optimizer.update_params(self.conv2)
+                self.optimizer.update_params(self.conv3)
+                    
+                self.optimizer.post_update_params()
+                
+                Monitor[ct,0] = accuracy
+                Monitor[ct,1] = loss
+                Monitor[ct,2] = optimizer.current_learning_rate
+                
+                ct += 1
+                
+                print(f'epoch: {e}, ' +
+                      f'iteration: {it}' +
+                      f'accuracy: {self.accuracy: .3f}, ' +
+                      f'loss: {loss: .3f}, ' +
+                      f'current learning rate: {self.optimizer.current_learning_rate: .5f}')
                 
                 
                 

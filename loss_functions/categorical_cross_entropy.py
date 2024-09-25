@@ -15,7 +15,7 @@ class CategoricalCrossEntropy(Loss):
              correct_confidences = np.sum(y_pred_clipped*y_true, axis = 1)
          #now: calculating actual losses
          negative_log_likelihoods = -np.log(correct_confidences)
-         return(negative_log_likelihoods)
+         return negative_log_likelihoods
          
      def backward(self, dvalues, y_true):
          Nsamples = len(dvalues)
