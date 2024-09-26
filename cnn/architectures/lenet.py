@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from keras.datasets import mnist
-from cnn.conv_layer import *
+from cnn.architectures.conv_layer_lenet import ConvLayer
 from cnn.pooling_layer.average_pool_layer import *
 from activation_function.tanh import *
 from cnn.flatten_layer import *
@@ -112,9 +112,9 @@ class LeNet:
                     
                 self.optimizer.post_update_params()
                 
-                Monitor[ct,0] = accuracy
+                Monitor[ct,0] = self.accuracy
                 Monitor[ct,1] = loss
-                Monitor[ct,2] = optimizer.current_learning_rate
+                Monitor[ct,2] = self.optimizer.current_learning_rate
                 
                 ct += 1
                 
