@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from keras.datasets import mnist
-from cnn.architectures.conv_layer_lenet import ConvLayer
+from cnn.architectures.lenet.conv_layer_lenet import ConvLayer
 from cnn.pooling_layer.average_pool_layer import *
 from activation_function.tanh import *
 from cnn.flatten_layer import *

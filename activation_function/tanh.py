@@ -16,4 +16,4 @@ class Tanh:
     def backward(self, dvalues):
         deriv = 1 - self.output**2
         deriv = np.nan_to_num(deriv)
-        self.dinputs = np.multiply(deriv * dvalues)
+        self.dinputs = np.multiply(deriv,dvalues)

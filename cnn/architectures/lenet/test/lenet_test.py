@@ -1,5 +1,5 @@
-from cnn.architectures.lenet import *
-from utils.dataset_loader import *
+from cnn.architectures.lenet.lenet import LeNet
+from utils.dataset_loader import DatasetLoader
 
 dl = DatasetLoader()
 dl.load_mnist_data()
