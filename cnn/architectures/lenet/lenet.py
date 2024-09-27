@@ -134,8 +134,8 @@ class LeNet:
             np.save('dense_biases2.npy', self.dense_final.biases)
             
             np.save('weightsC1.npy', self.conv1.weights)
-            np.save('weightsC1.npy', self.conv2.weights)
-            np.save('weightsC1.npy', self.conv3.weights)
+            np.save('weightsC2.npy', self.conv2.weights)
+            np.save('weightsC3.npy', self.conv3.weights)
             
             np.save('biasesC1.npy', self.conv1.biases)
             np.save('biasesC2.npy', self.conv2.biases)
@@ -169,6 +169,20 @@ class LeNet:
         
         dense1 = Layer_Dense(n_inputs, n_neuron)
         dense2 = Layer_Dense(n_neuron, n_class)
+        
+        dense1.weights = np.load('dense_weights1.npy')
+        dense2.weights = np.load('dense_weights2.npy')
+        
+        dense1.biases = np.load('dense_biases1.npy')
+        dense2.biases = np.load('dense_biases2.npy')
+        
+        Conv1.weights = np.load('weightsC1.npy')
+        Conv2.weights = np.load('weightsC2.npy')
+        Conv3.weights = np.load('weightsC3.npy')
+        
+        Conv1.biases = np.load('biasesC1.npy')
+        Conv2.biases = np.load('biasesC2.npy')
+        Conv3.biases = np.load('biasesC3.npy')
         
         Conv1.forward(M,0,1)
         T[0].forward(Conv1.output)
@@ -204,12 +218,12 @@ class LeNet:
             ax.imshow(M[:,:,0,i].reshape((28,28)),cmap=plt.cm.gray_r,\
                       interpolation='nearest')
             
-            predclass = np.ar3gmax(probabilities[i,:])
+            predclass = np.argmax(probabilities[i,:])
             trueclass = np.argmax(C[i])
             
             S = str(predclass)
           
-            if predclass != trueclass:
+            if predclass == trueclass:
                 # label the image with the blue text
                 P = str(round(probabilities[i,predclass],2))#probability
                 ax.text(0, 3, S + ', P = ' + P, color = [0,128/255,0])
