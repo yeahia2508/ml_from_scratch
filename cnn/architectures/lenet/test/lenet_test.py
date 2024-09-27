@@ -7,3 +7,4 @@ dl.load_mnist_data()
 
 lenet = LeNet(dl.mnist_data)
 lenet.run_training()
+lenet.evaluate(5)

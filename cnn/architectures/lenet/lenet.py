@@ -124,8 +124,103 @@ class LeNet:
                       f'loss: {loss: .3f}, ' +
                       f'current learning rate: {self.optimizer.current_learning_rate: .5f}')
                 
+            
+            ## Save weights
+            
+            np.save('dense_weights1.npy', self.dense1.weights)
+            np.save('dense_weights2.npy', self.dense_final.weights)
+            
+            np.save('dense_biases1.npy', self.dense1.biases)
+            np.save('dense_biases2.npy', self.dense_final.biases)
+            
+            np.save('weightsC1.npy', self.conv1.weights)
+            np.save('weightsC1.npy', self.conv2.weights)
+            np.save('weightsC1.npy', self.conv3.weights)
+            
+            np.save('biasesC1.npy', self.conv1.biases)
+            np.save('biasesC2.npy', self.conv2.biases)
+            np.save('biasesC3.npy', self.conv3.biases)
+            
+            np.savetxt('Monitor.txt', Monitor)
+            
+    
+    def evaluate(self, n = 5):
+        testX = self.testX
+        testY = self.testY
+        
+        idx = random.sample(range(len(testY)), n)
+        
+        M = testX[:,:,:,idx]
+        C = testY[idx]
+        
+        n_neuron = self.n_neuron
+        n_class = len(np.unique(testY))
+        n_inputs = 480
+        
+        Conv1 = ConvLayer([5,5],6)
+        Conv2 = ConvLayer([5,5],16)
+        Conv3 = ConvLayer([5,5],120)
+    
+        AP1 = Average_Pool()
+        AP2 = Average_Pool()
+    
+        T = [Tanh() for i in range(4)]
+        F = FlattenLayer()
+        
+        dense1 = Layer_Dense(n_inputs, n_neuron)
+        dense2 = Layer_Dense(n_neuron, n_class)
+        
+        Conv1.forward(M,0,1)
+        T[0].forward(Conv1.output)
+        AP1.forward(T[0].output,2,2)
+        
+        Conv2.forward(AP1.output,0,1)
+        T[1].forward(Conv2.output)
+        AP2.forward(T[1].output,2,2)
+        
+        Conv3.forward(AP2.output,2,3)
+        T[2].forward(Conv3.output)
+ 
+        F.forward(T[2].output)
+        x = F.output
+ 
+        dense1.forward(x)
+        T[3].forward(dense1.output)
+        dense2.forward(T[3].output)
+        
+        softmax = Activation_Softmax()
+        softmax.forward(dense2.output)
+        
+        probabilities = softmax.output
+        
+        
+        fig = plt.figure(figsize=(15, 7))
+        fig.subplots_adjust(left=0, right=1, bottom=0, top=1, hspace=0.05,\
+                            wspace=0.05)
+
+        # plot the images: each image is 28x28 pixels
+        for i in range(n):
+            ax = fig.add_subplot(5, 10, i + 1, xticks=[], yticks=[])
+            ax.imshow(M[:,:,0,i].reshape((28,28)),cmap=plt.cm.gray_r,\
+                      interpolation='nearest')
+            
+            predclass = np.ar3gmax(probabilities[i,:])
+            trueclass = np.argmax(C[i])
+            
+            S = str(predclass)
+          
+            if predclass != trueclass:
+                # label the image with the blue text
+                P = str(round(probabilities[i,predclass],2))#probability
+                ax.text(0, 3, S + ', P = ' + P, color = [0,128/255,0])
+            else:
+                # label the image with the red text
+                ax.text(0, 3, S, color=[178/255,34/255,34/255])
                 
-                
+        plt.savefig('evaluation results.pdf')
+        plt.show()
+            
+    
                 
         
         
