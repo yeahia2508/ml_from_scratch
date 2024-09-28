@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from keras.datasets import mnist
 from cnn.conv_layer import ConvLayer
 from cnn.pooling_layer.maxpool_layer import MaxPoolLayer
 from activation_function.relu import Activation_ReLU
