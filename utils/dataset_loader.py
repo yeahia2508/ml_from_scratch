@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from keras.datasets import mnist
+import tensorflow as tf
 import numpy as np
+from pathlib import Path
 
 class DatasetLoader:
     def load_mnist_data(self):
@@ -22,6 +24,17 @@ class DatasetLoader:
             textX_3d[:,:,imageChannelIndex,:] = testX
             
         self.mnist_data = (trainX_3d, trainY), (textX_3d, testY)
+        
+    def load_data_tf(self, data_dir, batch_size = 32, image_height = 227, image_width = 227):
+        data_dir = Path(data_dir)
+        class_names = np.array([item.name for item in data_dir.glob('*') if item.name != "LICENSE.txt" ])
+        image_generator = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1./255)
+        train_data_gen = image_generator.flow_from_directory(directory=str(data_dir),
+                                                     batch_size=batch_size,
+                                                     shuffle=True,
+                                                     target_size=(image_height, image_width), #Resizing the raw dataset
+                                                     classes = list(class_names))
+        return train_data_gen
         
             
         
