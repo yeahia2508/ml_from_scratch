@@ -18,6 +18,9 @@ import tensorflow as tf
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+from utils.dataset_loader import DatasetLoader
+from utils.callbacks import TfCallback
+import datetime
 
 class AlexNet(Sequential):
     def __init__(self, input_shape, nb_classes):
@@ -45,14 +48,29 @@ class AlexNet(Sequential):
         
         adam = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
         self.compile(optimizer = adam, loss = 'categorical_crossentropy', metrics = ['accuracy'])
+        self.summary()
         
-class CallData:
-    def callCifar10(self):
-        (self.train_x, self.train_y), (self.test_x, self.test_y) = cifar10.load_data()
-        train_x = self.train_x / 255
-        test_x = self.test_x / 255
-        train_y = self.train_y
-        test_y = self.test_y
+
+
+class Model:
+    def __init__(self, model):
+        self.model = model
+        
+    def train(self,train_data, batch_size = 32, image_height = 227, image_width = 227):
+        steps_per_epoch = len(train_data) // batch_size
+        to_end_callback = TfCallback()
+        log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+        
+        # Training the Model
+        history = self.model.fit(
+              train_data,
+              steps_per_epoch=steps_per_epoch,
+              epochs=50)
+        
+        self.model.summary()
+        
+        
         
         
         
