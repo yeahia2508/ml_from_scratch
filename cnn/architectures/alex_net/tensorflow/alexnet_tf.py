@@ -54,22 +54,23 @@ class AlexNet(Sequential):
 
 
 class Model:
-    def __init__(self, model):
+    def __init__(self, model, batch_size):
         self.model = model
+        self.batch_size = batch_size
         
-    def train(self,train_data, batch_size = 32, image_height = 227, image_width = 227):
-        steps_per_epoch = len(train_data) // batch_size
-        to_end_callback = TfCallback()
-        log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-        tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
-        
-        # Training the Model
+    def train(self, train_data, validation_data, epochs = 50):
         history = self.model.fit(
               train_data,
-              steps_per_epoch=steps_per_epoch,
-              epochs=50)
+              steps_per_epoch= train_data.samples // self.batch_size,
+              validation_data=validation_data,
+              validation_steps=validation_data.samples // self.batch_size,
+              epochs= epochs)
         
-        self.model.summary()
+        return history;
+        
+    def evaluate(self, data):
+        loss, acc = self.model.evaluate(data)
+        print(f"acc: {acc}, loss: {loss}")
         
         
         
