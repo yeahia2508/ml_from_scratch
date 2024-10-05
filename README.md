@@ -23,6 +23,7 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 #### Architecture
 - **ResNet**
   - [ResNet Architecture (Video)](https://www.youtube.com/watch?v=Q1JCrG1bJ-A)
+  - [RenNet18 Implementation Tensorflow](https://medium.com/analytics-vidhya/resnet-understand-and-implement-from-scratch-d0eb9725e0db)
 - **AlexNet**
   - [AlexNet Layers (Video)](https://www.youtube.com/watch?v=7LQSdPjWjdA)
   - [AlexNet Tensorflow implimentation (Video)](https://www.youtube.com/watch?v=c2kKFSkAF10)
