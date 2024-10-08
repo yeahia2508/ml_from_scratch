@@ -41,12 +41,6 @@ Identifying and Localizing Objects in Images
 #### F1 score
  - [F1 score](#)
 
-#### F1 score
- - [F1 score](#)
-
-#### Intersection Over Union
- - [Intersection Over Union](#)
- 
 #### Intersection Over Union
  - [Intersection Over Union](#)
 
