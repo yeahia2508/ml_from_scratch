@@ -8,7 +8,7 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 
 ---
 
-### Convolutional Neural Networks (CNN)
+## Convolutional Neural Networks (CNN)
 Learn about CNNs, a fundamental building block in deep learning, especially for image data.
 
 #### Conv Layer
@@ -31,7 +31,7 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 
 ---
 
-### Object Detection
+## Object Detection
 Identifying and Localizing Objects in Images
 
 #### Precesion, Recall
