@@ -28,6 +28,13 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 - **AlexNet**
   - [AlexNet Layers (Video)](https://www.youtube.com/watch?v=7LQSdPjWjdA)
   - [AlexNet Tensorflow implimentation (Video)](https://www.youtube.com/watch?v=c2kKFSkAF10)
+- **MobileNet**
+  - [MobileNet V1](#)
+  - [MobileNet V2](#)
+  - [MobileNet V3](#)
+  
+#### Tool
+- [Cnn Explainer, Visual Way to understand cnn](https://poloclub.github.io/cnn-explainer/)
 
 ---
 
