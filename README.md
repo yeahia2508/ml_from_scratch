@@ -29,8 +29,8 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
   - [AlexNet Layers (Video)](https://www.youtube.com/watch?v=7LQSdPjWjdA)
   - [AlexNet Tensorflow implimentation (Video)](https://www.youtube.com/watch?v=c2kKFSkAF10)
 - **MobileNet**
-  - [MobileNet V1](#)
-  - [MobileNet V2](#)
+  - [MobileNet V1(Video)](https://www.youtube.com/watch?v=ocleY6pRPkY)
+  - [MobileNet V2(Video)](https://www.youtube.com/watch?v=ocleY6pRPkY&t=806s)
   - [MobileNet V3](#)
   
 #### Tool
