@@ -3,10 +3,25 @@
 This repository is designed to help anyone who wants to learn Machine Learning (ML) topics from scratch. The resources here include both articles and videos that break down complex ML concepts into digestible, actionable learning modules. Whether you're just starting out or want to deep dive into specific subtopics, this repository aims to provide an organized way to learn ML.
 
 ## Table of Contents
-1. [Convolutional Neural Networks (CNN)](#cnn)
-1. [Object Detection](#object_detection)
+- [Activation Functions](#activation_functions)
+- [Convolutional Neural Networks (CNN)](#cnn)
+- [Object Detection](#object_detection)
 
 ---
+
+
+## Activation Functions
+Learn about activation Functions
+
+
+#### ReLU6
+ -[Explaination and implementation (Video)](https://www.youtube.com/watch?v=OhGDEPx3pBc)
+ 
+#### Hard Sigmoid Activation
+ -[Theory and Implementation (Video)](https://www.youtube.com/watch?v=2NOF6bo3Jvw)
+ 
+#### Hard Swish Activation Function
+ - [Article](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
 
 ## Convolutional Neural Networks (CNN)
 Learn about CNNs, a fundamental building block in deep learning, especially for image data.
@@ -31,7 +46,7 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 - **MobileNet**
   - [MobileNet V1(Video)](https://www.youtube.com/watch?v=ocleY6pRPkY)
   - [MobileNet V2(Video)](https://www.youtube.com/watch?v=ocleY6pRPkY&t=806s)
-  - [MobileNet V3](#)
+  - [MobileNet V3 Explaination and Implementation(Video)](https://www.youtube.com/watch?v=0oqs-inp7sA)
   
 #### Tool
 - [Cnn Explainer, Visual Way to understand cnn](https://poloclub.github.io/cnn-explainer/)
