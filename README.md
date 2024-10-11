@@ -15,10 +15,10 @@ Learn about activation Functions
 
 
 #### ReLU6
- -[Explaination and implementation (Video)](https://www.youtube.com/watch?v=OhGDEPx3pBc)
+ - [Explaination and implementation (Video)](https://www.youtube.com/watch?v=OhGDEPx3pBc)
  
 #### Hard Sigmoid Activation
- -[Theory and Implementation (Video)](https://www.youtube.com/watch?v=2NOF6bo3Jvw)
+ - [Theory and Implementation (Video)](https://www.youtube.com/watch?v=2NOF6bo3Jvw)
  
 #### Hard Swish Activation Function
  - [Article](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
