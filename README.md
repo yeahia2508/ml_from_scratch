@@ -21,7 +21,7 @@ Learn about activation Functions
  - [Theory and Implementation (Video)](https://www.youtube.com/watch?v=2NOF6bo3Jvw)
  
 #### Hard Swish Activation Function
- - [Article](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
+ - [Explaination (Article)](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
 
 ## Convolutional Neural Networks (CNN)
 Learn about CNNs, a fundamental building block in deep learning, especially for image data.
