@@ -15,7 +15,7 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 Different mechine learning Algorithms
 
 #### Support Vector Mechine
- - [Support Vector Mechine (Video)](https://www.youtube.com/watch?v=N1vOgolbjSc)
+ - [SVM Intuition (Video)](https://www.youtube.com/watch?v=pCQQaeC9WRE&list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I&index=96)
 
 
 #### ReLU6
