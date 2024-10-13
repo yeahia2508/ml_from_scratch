@@ -3,11 +3,23 @@
 This repository is designed to help anyone who wants to learn Machine Learning (ML) topics from scratch. The resources here include both articles and videos that break down complex ML concepts into digestible, actionable learning modules. Whether you're just starting out or want to deep dive into specific subtopics, this repository aims to provide an organized way to learn ML.
 
 ## Table of Contents
+- [Algorithms]
 - [Activation Functions](#activation_functions)
 - [Convolutional Neural Networks (CNN)](#cnn)
 - [Object Detection](#object_detection)
 
 ---
+
+
+## Algorithms
+Different mechine learning Algorithms
+
+#### Support Vector Mechine
+ - [Support Vector Mechine (Video)](https://www.youtube.com/watch?v=N1vOgolbjSc)
+
+
+#### ReLU6
+ - [Explaination and implementation (Video)](https://www.youtube.com/watch?v=OhGDEPx3pBc)
 
 
 ## Activation Functions
