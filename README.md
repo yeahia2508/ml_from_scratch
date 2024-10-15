@@ -4,9 +4,9 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 
 ## Table of Contents
 - [Algorithms](#algorithms)
-- [Activation Functions](#activation_functions)
-- [Convolutional Neural Networks (CNN)](#cnn)
-- [Object Detection](#object_detection)
+- [Activation Functions](#activation-functions)
+- [Convolutional Neural Network](#convolutional-neural-network)
+- [Object Detection](#object-detection)
 
 ---
 
@@ -35,7 +35,7 @@ Learn about activation Functions
 #### Hard Swish Activation Function
  - [Explaination (Article)](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
 
-## Convolutional Neural Networks (CNN)
+## Convolutional Neural Network
 Learn about CNNs, a fundamental building block in deep learning, especially for image data.
 
 #### Conv Layer
