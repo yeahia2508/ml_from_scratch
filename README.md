@@ -40,7 +40,9 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 
 #### Conv Layer
 - **Theory**
-  - [Convolution Operation in CNN (Video)](https://www.youtube.com/watch?v=gLwX3zHkims)
+  - [1D convolution explaination (video)](https://www.youtube.com/watch?v=yd_j_zdLDWs)
+  - [2D convolution explaination (video)](https://www.youtube.com/watch?v=sTTuaNp5LTw)
+  - [2D Convolution explaination (video)](https://www.youtube.com/watch?v=gLwX3zHkims)
   - [Padding (Video)](https://www.youtube.com/watch?v=-1xVmU8Z6Bs)
   - [Stride (Video)](https://www.youtube.com/watch?v=lxk_nmpqI5M)
 
