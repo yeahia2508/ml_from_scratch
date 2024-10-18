@@ -85,6 +85,10 @@ Identifying and Localizing Objects in Images
  
 #### All point interpolation
  - [All point interpolation](#)
+   
+#### Non max suppression
+ - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
+ - [Explaination Video, Andrew Ng](https://www.youtube.com/watch?v=VAo84c1hQX8)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
