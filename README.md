@@ -89,6 +89,9 @@ Identifying and Localizing Objects in Images
 #### Non max suppression
  - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
  - [Explaination Video, Andrew Ng](https://www.youtube.com/watch?v=VAo84c1hQX8)
+   
+#### Region Proposals
+ - [Explainaton Video](https://www.youtube.com/watch?v=uX4LLf-33p0&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=60)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
