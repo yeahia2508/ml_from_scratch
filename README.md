@@ -78,14 +78,13 @@ Learn about CNNs, a fundamental building block in deep learning, especially for 
 Identifying and Localizing Objects in Images
 
 #### Precesion, Recall
- - [Precesion Video](#)
- - [Recall Video](#)
+ - [Precesion and Recall expalination (video)](https://www.youtube.com/watch?v=v6JaHuObeK4&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=4)
  
-#### F1 score
- - [F1 score](#)
+#### F1 score, Accuracy
+ - [F1 score](https://www.youtube.com/watch?v=ji48Lz6amMc&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=8)
 
 #### Intersection Over Union
- - [Intersection Over Union](#)
+ - [Intersection Over Union](https://www.youtube.com/watch?v=m9xujrLZYBw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=11)
 
 #### 11 point interpolation
  - [11 point interpolation](#)
