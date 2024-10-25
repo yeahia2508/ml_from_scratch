@@ -100,7 +100,12 @@ Identifying and Localizing Objects in Images
 
 #### Sliding Window detection
  - [How sliding window used to detect object (Video)](https://www.youtube.com/watch?v=17Q70NuRwZE&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=79)
+
+#### Overfeat
  - [Use cnn as sliding window (Video)](https://www.youtube.com/watch?v=3QO8ZuS8ACU&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=80)
+ - [Use cnn as sliding window in different image scale (Video)](https://www.youtube.com/watch?v=t5PHp8uSMKo&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=53)
+ - [Effective Stride (Video)](https://www.youtube.com/watch?v=50-PhoCJEOk&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=54)
+ - [Overfeat network design explaination (Video)](https://www.youtube.com/watch?v=JKTzkcaWfuk&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=55)
    
 #### Non max suppression
  - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
