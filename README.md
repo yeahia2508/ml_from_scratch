@@ -93,7 +93,10 @@ Identifying and Localizing Objects in Images
  - [All point interpolation](#)
 
 #### Object Localization
- - [Object localization, define target label y](https://www.youtube.com/watch?v=XJ0g9-_Ti4U&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=77)
+ - [Object localization, define target label y (Video)](https://www.youtube.com/watch?v=XJ0g9-_Ti4U&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=77)
+
+#### Landmark Detection
+ - [Landmark Detection explaination (Video)](https://www.youtube.com/watch?v=aViJpBUJKq8&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=78)
    
 #### Non max suppression
  - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
