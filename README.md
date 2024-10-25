@@ -97,6 +97,9 @@ Identifying and Localizing Objects in Images
 
 #### Landmark Detection
  - [Landmark Detection explaination (Video)](https://www.youtube.com/watch?v=aViJpBUJKq8&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=78)
+
+#### Sliding Window detection
+ - [How sliding window used to detect object](https://www.youtube.com/watch?v=17Q70NuRwZE&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=79)
    
 #### Non max suppression
  - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
