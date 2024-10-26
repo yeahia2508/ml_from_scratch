@@ -84,7 +84,8 @@ Identifying and Localizing Objects in Images
  - [F1 score](https://www.youtube.com/watch?v=ji48Lz6amMc&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=8)
 
 #### Intersection Over Union
- - [Intersection Over Union](https://www.youtube.com/watch?v=m9xujrLZYBw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=11)
+ - [Intersection Over Union explaination (Video)](https://www.youtube.com/watch?v=m9xujrLZYBw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=11)
+ - [Intersection Over union explaination 2 (Video)](https://www.youtube.com/watch?v=_Zgxy1nlQmo&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=82)
 
 #### 11 point interpolation
  - [11 point interpolation](#)
