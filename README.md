@@ -88,12 +88,6 @@ Identifying and Localizing Objects in Images
  - [Intersection Over union explaination 2 (Video)](https://www.youtube.com/watch?v=_Zgxy1nlQmo&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=82)
  - [Explaination and Implementation, pytorch (Video)](https://www.youtube.com/watch?v=XXYG5ZWtjj0&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=2)
 
-#### 11 point interpolation
- - [11 point interpolation](#)
- 
-#### All point interpolation
- - [All point interpolation](#)
-
 #### Object Localization
  - [Object localization, define target label y (Video)](https://www.youtube.com/watch?v=XJ0g9-_Ti4U&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=77)
 
