@@ -107,6 +107,7 @@ Identifying and Localizing Objects in Images
  - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
  - [Explaination Video, Andrew Ng](https://www.youtube.com/watch?v=VAo84c1hQX8)
  - [Explaination Video, yeswanth pv (Video)](https://www.youtube.com/watch?v=hC00rofqJQY&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=83)
+ - [Explaination and Implementation, Aladdin Persson (Video)](https://www.youtube.com/watch?v=YDkjWEN8jNA&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=3)
 
 #### Anchor boxes
  - [Anchor Boxes, yolo algorithm](https://www.youtube.com/watch?v=Ba4QdJjy5qQ&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=84)
