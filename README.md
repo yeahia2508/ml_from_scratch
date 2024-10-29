@@ -25,10 +25,6 @@ Different mechine learning Algorithms
  - [SVM Intuition (Video)](https://www.youtube.com/watch?v=pCQQaeC9WRE&list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I&index=96)
 
 
-#### ReLU6
- - [Explaination and implementation (Video)](https://www.youtube.com/watch?v=OhGDEPx3pBc)
-
-
 ## Activation Functions
 Learn about activation Functions
 
