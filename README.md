@@ -84,6 +84,18 @@ Identifying and Localizing Objects in Images
  - [Intersection Over union explaination 2 (Video)](https://www.youtube.com/watch?v=_Zgxy1nlQmo&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=82)
  - [Explaination and Implementation, pytorch (Video)](https://www.youtube.com/watch?v=XXYG5ZWtjj0&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=2)
 
+#### Non max suppression
+ - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
+ - [Explaination Video, Andrew Ng](https://www.youtube.com/watch?v=VAo84c1hQX8)
+ - [Explaination Video, yeswanth pv (Video)](https://www.youtube.com/watch?v=hC00rofqJQY&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=83)
+ - [Explaination and Implementation, Aladdin Persson (Video)](https://www.youtube.com/watch?v=YDkjWEN8jNA&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=3)
+
+#### Mean Average Precision
+ - [Explaination and Implementation in pytorch, Aladdin Persson (Video)](https://www.youtube.com/watch?v=FppOzcDvaDI&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=4)
+ - [Precision Recall Curve Explaination, yeswanth pv (Video)](https://www.youtube.com/watch?v=QdWidmgLwbw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=13)
+ - [Average precision explaination, yeswanth pv (Video)](https://www.youtube.com/watch?v=QdWidmgLwbw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=14)
+ - [Mean Average Precision explaination, yeswanth pv (Video)](https://www.youtube.com/watch?v=QdWidmgLwbw&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=15)
+
 #### Object Localization
  - [Object localization, define target label y (Video)](https://www.youtube.com/watch?v=XJ0g9-_Ti4U&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=77)
 
@@ -98,12 +110,6 @@ Identifying and Localizing Objects in Images
  - [Use cnn as sliding window in different image scale (Video)](https://www.youtube.com/watch?v=t5PHp8uSMKo&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=53)
  - [Effective Stride (Video)](https://www.youtube.com/watch?v=50-PhoCJEOk&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=54)
  - [Overfeat network design explaination (Video)](https://www.youtube.com/watch?v=JKTzkcaWfuk&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=55)
-   
-#### Non max suppression
- - [Explaination Video](https://www.youtube.com/watch?v=07jFApuhh4I)
- - [Explaination Video, Andrew Ng](https://www.youtube.com/watch?v=VAo84c1hQX8)
- - [Explaination Video, yeswanth pv (Video)](https://www.youtube.com/watch?v=hC00rofqJQY&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=83)
- - [Explaination and Implementation, Aladdin Persson (Video)](https://www.youtube.com/watch?v=YDkjWEN8jNA&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=3)
 
 #### Anchor boxes
  - [Anchor Boxes, yolo algorithm](https://www.youtube.com/watch?v=Ba4QdJjy5qQ&list=PLWGaJc7r2amXc-Gq6rLdktkUB0TTRzrDQ&index=84)
