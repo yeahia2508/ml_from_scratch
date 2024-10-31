@@ -121,5 +121,8 @@ Identifying and Localizing Objects in Images
  - [Spatial Pyramid Matching](https://www.youtube.com/watch?v=6MwuK2wHlOg&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=69)
  - [Spetial Peramid Pooling Explaination Video](https://www.youtube.com/watch?v=2IoHC_fhrFU&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=70)
 
+#### Algorithms
+ - [YOLO v1 explaination and implementation](https://www.youtube.com/watch?v=n9_XyCGr-MI&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=5)
+
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
