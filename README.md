@@ -5,6 +5,7 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 ## Table of Contents
 - [Tensorflow Basic](#tensorflow-basic)
 - [Algorithms](#algorithms)
+- [Loss Function](#loss-function)
 - [Activation Functions](#activation-functions)
 - [Convolutional Neural Network](#convolutional-neural-network)
 - [Object Detection](#object-detection)
@@ -23,6 +24,13 @@ Different mechine learning Algorithms
 
 #### Support Vector Mechine
  - [SVM Intuition (Video)](https://www.youtube.com/watch?v=pCQQaeC9WRE&list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I&index=96)
+
+---
+## Loss Function
+Different type of Loss functions
+
+#### Mean Square Error
+ - [Explaination, Andrew Ng (Video)](https://www.youtube.com/watch?v=nne3VzsfjC0)
 
 
 ## Activation Functions
