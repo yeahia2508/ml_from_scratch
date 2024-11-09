@@ -18,6 +18,7 @@ Tensorflow framework basic concepts
 #### Tensor
  - [What is tensor?](https://www.youtube.com/watch?v=f5liqUk0ZTw)
 
+---
 
 ## Algorithms
 Different mechine learning Algorithms
@@ -36,6 +37,7 @@ Different type of Loss functions
 #### Mean Square Error
  - [Explaination, Andrew Ng (Video)](https://www.youtube.com/watch?v=nne3VzsfjC0)
 
+---
 
 ## Activation Functions
 Learn about activation Functions
@@ -49,6 +51,8 @@ Learn about activation Functions
  
 #### Hard Swish Activation Function
  - [Explaination (Article)](https://medium.com/@akp83540/hardswish-activation-function-62fb36870bf4)
+
+---
 
 ## Convolutional Neural Network
 Learn about CNNs, a fundamental building block in deep learning, especially for image data.
