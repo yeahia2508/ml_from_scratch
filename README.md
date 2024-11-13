@@ -25,6 +25,7 @@ Different mechine learning Algorithms
 #### Linear Regression
  - [Single Veriable Linear regression Explaination, Andrew Ng(Video)](https://www.youtube.com/watch?v=dLc-lfEEYss&list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI&index=9)
  - [Multi Veriable Linear Regression Explaination, Andrew Ng(Video)](https://www.youtube.com/watch?v=jXg0vU0y1ak&list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI&index=21)
+ - [Linar regression intuition, Siddhardhan (Video)](https://www.youtube.com/watch?v=AZ32LbLcPV0&list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I&index=82)
 
 #### Support Vector Mechine
  - [SVM Intuition (Video)](https://www.youtube.com/watch?v=pCQQaeC9WRE&list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I&index=96)
