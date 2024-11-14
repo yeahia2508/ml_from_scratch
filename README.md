@@ -135,7 +135,9 @@ Identifying and Localizing Objects in Images
  - [Spetial Peramid Pooling Explaination Video](https://www.youtube.com/watch?v=2IoHC_fhrFU&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=70)
 
 #### Algorithms
+- **Yolo V1**
  - [YOLO v1 explaination and implementation](https://www.youtube.com/watch?v=n9_XyCGr-MI&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=5)
+ - [YOLO v1 explaination (Video)](https://www.youtube.com/watch?v=zgbPj4lSc58&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=1)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
