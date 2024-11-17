@@ -136,17 +136,17 @@ Identifying and Localizing Objects in Images
 
 #### Algorithms
 - **Yolo V1**
- - [YOLO v1 explaination and implementation](https://www.youtube.com/watch?v=n9_XyCGr-MI&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=5)
- - [YOLO v1 explaination (Video)](https://www.youtube.com/watch?v=zgbPj4lSc58&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=1)
+  - [YOLO v1 explaination and implementation](https://www.youtube.com/watch?v=n9_XyCGr-MI&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=5)
+  - [YOLO v1 explaination (Video)](https://www.youtube.com/watch?v=zgbPj4lSc58&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=1)
    
 - **Yolo V2**
- - [Yolo v2 architecture explaination (Video)](https://www.youtube.com/watch?v=PYpn1GSwWnc&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=2)
- - [Yolo9000 paper explaination (Video)](https://www.youtube.com/watch?v=PYpn1GSwWnc&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=2)
- - [Bounding box prediction in YoloV2 (video)](https://www.youtube.com/watch?v=-nLJyxhl8bY&list=PLivJwLo9VCUJXdO8SiOjZTWr_fXrAy4OQ&index=9)
+  - [Yolo v2 architecture explaination (Video)](https://www.youtube.com/watch?v=PYpn1GSwWnc&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=2)
+  - [Yolo9000 paper explaination (Video)](https://www.youtube.com/watch?v=PYpn1GSwWnc&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=2)
+  - [Bounding box prediction in YoloV2 (video)](https://www.youtube.com/watch?v=-nLJyxhl8bY&list=PLivJwLo9VCUJXdO8SiOjZTWr_fXrAy4OQ&index=9)
    
 - **Yolo V3**
- - [YoloV3 architecture explaination (Video)](https://www.youtube.com/watch?v=9fhAbvPWzKs&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=4)
- - [YoloV3 implementation (video)](https://www.youtube.com/watch?v=Grir6TZbc1M&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=6)
+  - [YoloV3 architecture explaination (Video)](https://www.youtube.com/watch?v=9fhAbvPWzKs&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=4)
+  - [YoloV3 implementation (video)](https://www.youtube.com/watch?v=Grir6TZbc1M&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=6)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
