@@ -9,6 +9,7 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 - [Activation Functions](#activation-functions)
 - [Convolutional Neural Network](#convolutional-neural-network)
 - [Object Detection](#object-detection)
+- [Rnn](#rnn)
 
 ---
 
@@ -88,7 +89,13 @@ Identifying and Localizing Objects in Images
 
 #### Precesion, Recall
  - [Precesion and Recall expalination (video)](https://www.youtube.com/watch?v=v6JaHuObeK4&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=4)
- 
+ The Inquest
+rdeoptosSngl34208hig7am4566i1hu936g3g1cghi8ummtiu9
+m
+uf13t2ll
+2
+  · 
+More details in comment section.
 #### F1 score, Accuracy
  - [F1 score](https://www.youtube.com/watch?v=ji48Lz6amMc&list=PL1GQaVhO4f_jLxOokW7CS5kY_J1t1T17S&index=8)
 
@@ -147,6 +154,11 @@ Identifying and Localizing Objects in Images
 - **Yolo V3**
   - [YoloV3 architecture explaination (Video)](https://www.youtube.com/watch?v=9fhAbvPWzKs&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=4)
   - [YoloV3 implementation (video)](https://www.youtube.com/watch?v=Grir6TZbc1M&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=6)
+
+## Rnn
+
+#### Introduction
+ - [What is rnn?](https://www.youtube.com/watch?v=lWPkNkShNbo&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=1)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
