@@ -9,7 +9,7 @@ This repository is designed to help anyone who wants to learn Machine Learning (
 - [Activation Functions](#activation-functions)
 - [Convolutional Neural Network](#convolutional-neural-network)
 - [Object Detection](#object-detection)
-- [Rnn](#rnn)
+- [Recurrent Neural Networks](#recurrent-neural-networks)
 
 ---
 
@@ -155,10 +155,11 @@ More details in comment section.
   - [YoloV3 architecture explaination (Video)](https://www.youtube.com/watch?v=9fhAbvPWzKs&list=PL1u-h-YIOL0sZJsku-vq7cUGbqDEeDK0a&index=4)
   - [YoloV3 implementation (video)](https://www.youtube.com/watch?v=Grir6TZbc1M&list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq&index=6)
 
-## Rnn
+## Recurrent Neural Networks
 
 #### Introduction
  - [What is rnn?](https://www.youtube.com/watch?v=lWPkNkShNbo&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=1)
+ - [Type of rnn](https://www.youtube.com/watch?v=R2ZhLI2-vHI&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=2)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
