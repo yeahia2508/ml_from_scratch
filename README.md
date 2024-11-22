@@ -161,5 +161,8 @@ More details in comment section.
  - [What is rnn?](https://www.youtube.com/watch?v=lWPkNkShNbo&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=1)
  - [Type of rnn](https://www.youtube.com/watch?v=R2ZhLI2-vHI&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=2)
 
+#### RNN Cell
+ - [Inside Rnn Cell, (Video)](https://www.youtube.com/watch?v=7ZQgK_MV_t0&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=3)
+
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
