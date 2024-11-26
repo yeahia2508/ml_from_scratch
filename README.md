@@ -165,5 +165,8 @@ More details in comment section.
 #### RNN Cell
  - [Inside Rnn Cell, (Video)](https://www.youtube.com/watch?v=7ZQgK_MV_t0&list=PLuhqtP7jdD8ARBnzj8SZwNFhwWT89fAFr&index=3)
 
+#### Backpropagation
+ - [Many to one architecture backpropagation explaination (video, hindi)](https://www.youtube.com/watch?v=OvCz1acvt-k)
+
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
