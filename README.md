@@ -167,6 +167,7 @@ More details in comment section.
 
 #### Backpropagation
  - [Many to one architecture backpropagation explaination (video, hindi)](https://www.youtube.com/watch?v=OvCz1acvt-k)
+ - [Backpropagation in rnn (Article)](https://medium.com/@abhishekjainindore24/backpropagation-in-rnn-abd87b940a7d)
 
 
 Feel free to explore the resources linked above, and as this repository grows, more machine learning topics will be added!
